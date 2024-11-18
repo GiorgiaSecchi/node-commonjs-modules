@@ -1,9 +1,31 @@
-//# FUNZIONE NAME
+//# FUNZIONE NAME IMPORTATA
+
 const fullName = require("./names");
 
-console.log(fullName("Giorgia", "Secchi"));
+const personName = fullName("Giorgia", "Secchi");
 
-//# FUNZIONE HOBBY
+// console.log(personName);
+
+//# FUNZIONE HOBBY IMPORTATA
+
 const hobbies = require("./hobbies");
 
-console.log(hobbies("chitarra", "ceramica", "storia"));
+const personHobbies = hobbies("chitarra", "ceramica", "storia");
+
+// console.log(personHobbies);
+
+//************************************************************* */
+
+//# NUOVA FUNZIONE CON NAME E HOBBY
+
+const people = () => {
+  const peopleObj = {
+    firstName: personName.firstName,
+    lastName: personName.lastName,
+    hobbies: personHobbies.hobbies,
+  };
+
+  return peopleObj;
+};
+
+console.log(people());

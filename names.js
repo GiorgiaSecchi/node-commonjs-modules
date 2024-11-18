@@ -4,4 +4,5 @@ const fullName = (firstName, lastName) => {
   return person;
 };
 
+//# FUNZIONE ESPORTATA
 module.exports = fullName;
