@@ -1,3 +1,7 @@
 const hobbies = (hobbyOne, hobbyTwo, hobbyThree) => {
-  const personHobbies = [{}];
+  const personHobbies = { hobbies: [hobbyOne, hobbyTwo, hobbyThree] };
+
+  return personHobbies;
 };
+
+module.exports = hobbies;
