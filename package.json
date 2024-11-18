@@ -1,10 +1,10 @@
 {
   "name": "commonjs-modules",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "people.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node --watch server.js"
+    "watch": "node --watch people.js"
   },
   "author": "Giorgia Secchi",
   "license": "ISC",
